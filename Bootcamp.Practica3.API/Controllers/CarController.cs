@@ -82,10 +82,6 @@ namespace Bootcamp.Practica3.API.Controllers
         {
             try
             {
-                Car car = _carService.GetCarById(id);
-                if (car == null)
-                    return StatusCode(StatusCodes.Status400BadRequest, null);
-
                 return StatusCode(StatusCodes.Status200OK, _carService.DeleteCar(id));
             }
             catch (Exception e)
@@ -100,10 +96,6 @@ namespace Bootcamp.Practica3.API.Controllers
         {
             try
             {
-                Car car = _carService.GetCarById(id);
-                if (car == null)
-                    return StatusCode(StatusCodes.Status400BadRequest, null);
-
                 return StatusCode(StatusCodes.Status200OK, _carService.DeleteCar2(id));
             }
             catch (Exception e)

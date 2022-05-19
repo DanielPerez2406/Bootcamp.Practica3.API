@@ -15,12 +15,6 @@ namespace Bootcamp.Practica3.API.Repositories
             context = _context;
         }
 
-        //public void deleteCar(Car car)
-        //{
-        //    context.Car.Remove(car);
-        //    context.SaveChanges();
-        //}
-
         public void DeleteCar(int Id)
         {
             context.Car.Remove(context.Car.Find(Id));
